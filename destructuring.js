@@ -73,12 +73,20 @@ console.log(erste, dritte);
 function getCompanyDetails() {
   return {
     name: 'Novi Hogeschool',
-    adress: 'Zonnebaan 9, Utrecht',
+    address: 'Zonnebaan 9, Utrecht',
   }
 }
+
+const nameSchool = getCompanyDetails().name;
+const addressSchool = getCompanyDetails().address;
+
+
+console.log(nameSchool,addressSchool);
+//console.log(addressSchool);
 
 // opdracht 7: Destructure beide zinnetjes uit de return value van de getDetails functie en log ze in de terminal. Let op: de functie verwacht argumenten bij het aanroepen!
 
 function getDetails(name, age) {
   return [`Your name is ${name}`, `You are ${age} years old`];
 }
+
