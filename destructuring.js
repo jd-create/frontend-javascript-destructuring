@@ -46,10 +46,17 @@ const tvOptions = {
   },
 };
 
+const { wifi, bluetooth } = tvOptions.options.connectivity.popular;
+
+console.log(wifi, bluetooth);
+
 // Opdracht 4: Destructure beide waardes uit onderstaande array, en log ze daarna in de terminal
 
 const connectivity = ['wifi', 'bluetooth'];
 
+const { first, second } = connectivity;
+
+console.log(connectivity);
 
 // Opdracht 5: Destructure de >eerste< en >derde< waarde uit onderstaande array, en log ze daarna in de terminal
 
